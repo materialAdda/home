@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <style>
+        .nav {
+            background-color: black;
+            color: orange;
+            margin-bottom: 30px;
+            justify-content: center;
+            padding: 20px;
+            font-size: 25px;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+
+        .nav h3 {
+            animation: navani 3s;
+        }
+
+
+        @keyframes navani {
+            0% {
+                opacity: 0.3
+            }
+
+            ;
+
+            25% {
+                opacity: 0.5;
+                font-size: 0.3ew
+            }
+
+            ;
+
+            50% {
+                opacity: 0.7;
+                font-size: 0.9ew
+            }
+
+            ;
+
+            100% {
+                opacity: 1;
+                font-size: 1.5ew
+            }
+
+            ;
+        }
+
+        @media (min-width:760px) {
+            #cmob {
+                opacity: 0;
+            }
+            #foot{
+                opacity: 0;
+            }
+            #cp{
+                opacity: 0;
+            }
+        }
+        #sel{
+            margin-top: 30px;
+            margin-left:20px;
+        }
+        li{
+            list-style: none;
+            text-align: left;
+            justify-content: left;
+        }
+        @media (min-width:800px)
+        {
+            #fol{
+                opacity:1;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <h3>MATERIAL ADDA</h3>
+    </div>
+    <div id="cmob">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-interval="1000">
+                    <img src="11.PNG" class="d-block w-100" style="height: 200px;" alt="...">
+                    <div class="carousel-caption">
+                        <h5>All Content</h5>
+                        <p>Books, Practicals , Assignments and Much more..... </p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-interval="5000">
+                    <img src="11.PNG" class="d-block w-100 h-30" style="height: 200px;" alt="...">
+                    <div class="carousel-caption ">
+                        <h5>Easy to Use Interface</h5>
+                        <p>Everything is grouped in proper format for ease to access.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-interval="7000">
+                    <img src="11.PNG" class="d-block w-100" style="height: 200px;" alt="...">
+                    <div class="carousel-caption ">
+                        <h5>Announcements & Notice Section</h5>
+                        <p>Submission deadlines ,Time Table of Exams and Much more.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <div id="lnav" class="d-none d-md-block" style="margin-top: -200px;">
+        <div id="carouselExampleFade1" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-interval="1000">
+                    <img src="11.PNG" class="d-block w-100" style="height: 250px;" alt="...">
+                    <div class="carousel-caption">
+                        <h5>All Content</h5>
+                        <p>Books, Practicals , Assignments and Much more..... </p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-interval="5000">
+                    <img src="11.PNG" class="d-block w-100" style="height: 250px;" alt="...">
+                    <div class="carousel-caption ">
+                        <h5>Easy to Use Interface</h5>
+                        <p>Everything is grouped in proper format for ease to access.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-interval="7000">
+                    <img src="11.PNG" class="d-block w-100" style="height: 250px;" alt="...">
+                    <div class="carousel-caption ">
+                        <h5>Announcements & Notice Section</h5>
+                        <p>Submission deadlines ,Time Table of Exams and Much more.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleFade1" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleFade1" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <div id="sel">
+        Semester&nbsp;:&nbsp;<input type="text" id="ser" list="semlis" placeholder="enter semseter">
+        <button type="button" style="margin-left:10px;" onclick="go()">Go</button>
+        <datalist id="semlis">
+            <option>3</option>
+            <option>4</option>
+        </datalist>
+    
+    <script>
+        function go() {
+            var a = document.getElementById('ser').value;
+            if (a.toLowerCase() == '3') {
+                window.open('indexsem3.html','_self');
+            }
+            else {
+                alert("4 sem");
+            }
+            document.getElementById('ser').value="";
+        }
+    </script>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+
+</body>
+
+</html>
